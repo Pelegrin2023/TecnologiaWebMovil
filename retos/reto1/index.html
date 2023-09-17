@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="JS/reto1.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Reto 1</title>
+  </head>
+  <body>
+    <h1 id="titulo">Reto 1 : Tecnología Web y Móvil</h1>
+    <div class="containerForm">
+      <h3>Ingresar un número por pantalla y saber si es un
+        número par o número impar.</h3>
+      <form id="determinar-form">
+        <label for="numero">Número:</label>
+        <input
+          type="number"
+          id="numero"
+          name="numero"
+          min="0"
+          placeholder="Ingrese un número"
+          required
+        />
+        <button type="submit">Determinar</button>
+      </form>
+      <div class="DivImprimir" id="result"></div>
+    </div>
+
+    <script src="JS/reto.js"></script>
+  </body>
 </html>
+
