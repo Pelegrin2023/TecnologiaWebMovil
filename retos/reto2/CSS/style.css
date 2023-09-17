@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(66, 62, 62);
+  text-align: center;
+}
+#titulo {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text {
+  font-family: "Times New Roman", Times, serif;
+  text-align: initial;
+  text-shadow: 3px 5px 5px #252729;
+  color: rgb(166, 177, 185);
+}
+
+.ImprimirResultados {
+  background-color: rgb(15, 76, 126);
+  color: white;
+  text-shadow: 3px 5px 5px #2f3336;
+}

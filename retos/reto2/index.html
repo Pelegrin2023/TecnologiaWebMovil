@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Reto 2: Tecnología Web y Móvil</h1>
+
+    <section>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registrar Notas</h5>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3" id="Notas-Form">
+              <div class="col-md-2"></div>
+              <div class="col-md-12">
+                <div class="form-outline">
+                  <label for="nota1" class="form-label">Nota 1</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    step="0.01"
+                    placeholder="Ingrese una nota"
+                    id="nota1"
+                    name="nota1"
+                    min="1.0"
+                    max="7.0"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-outline">
+                  <label class="form-label">Nota 2</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    step="0.01"
+                    placeholder="Ingrese una nota"
+                    id="nota2"
+                    name="nota2"
+                    min="1.0"
+                    max="7.0"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-outline">
+                  <label class="form-label">Nota 3</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    step="0.01"
+                    placeholder="Ingrese una nota"
+                    id="nota3"
+                    name="nota3"
+                    min="1.0"
+                    max="7.0"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Submit button -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-block mb-4"
+                style="margin-top: 40px"
+              >
+                Guardar Cambios
+              </button>
+            </form>
+          </div>
+          <div id="ImprimirResultados" class="ImprimirResultados"></div>
+        </div>
+      </div>
+    </section>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
