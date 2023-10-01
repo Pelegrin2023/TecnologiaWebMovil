@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto 3</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Reto 3: Tecnologia Web y Movil</h1>
+
+    <section>
+      <div class="Calculadora-dialog">
+        <div class="Calculadora-content">
+          <div class="Calculadora-header">
+            <h5 class="modal-title" id="ExampleModalLabel">
+              Calculadora de Propinas
+            </h5>
+          </div>
+          <div class="Calculadora-body">
+            <form class="row g-1" id="CalculadoraPropinas-Form">
+              <div class="col-md-2">
+                <label for="total">Total de la boleta:</label>
+              </div>
+              <div class="col-md-2">
+                <input
+                  type="number"
+                  class="form-control"
+                  step="1"
+                  placeholder="Ingrese monto"
+                  id="total"
+                  name="total"
+                  min="0"
+                  max=""
+                  required
+                />
+              </div>
+              <div class="col-md-2">
+                <label for="Porcentaje">Porcentaje de propina:</label>
+              </div>
+              <div class="col-md-2">
+                
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="Porcentaje"
+                  id="Porcentaje"
+                  required
+                >
+                  <option selected value="0.1" >10 %</option>
+                  <option value="0.11" >11 %</option>
+                  <option value="0.12" >12 %</option>
+                  <option value="0.13" >13 %</option>
+                  <option value="0.14" >14 %</option>
+                  <option value="0.15" >15 %</option>
+                  <option value="0.16" >16 %</option>
+                  <option value="0.17" >17 %</option>
+                  <option value="0.18" >18 %</option>
+                  <option value="0.19" >19 %</option>
+                  <option value="0.2" >20 %</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block mb-4"
+                >
+                  Calcular
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="ImprimirResultados" id="ImprimirResultados"></div>
+        </div>
+        
+      </div>
+
+      
+    </section>
+    <script src="JS/reto3.js"></script>
+  </body>
+</html>

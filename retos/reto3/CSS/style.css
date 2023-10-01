@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background-position: center top;
+    background-color: dimgray;
+}
+
+#titulo{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.Calculadora-dialog{
+    position: relative;
+    width: auto;
+    pointer-events: none;
+    margin: 100px;
+    padding: 10px;
+
+}
+.Calculadora-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.Calculadora-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem -1px);
+    border-top-right-radius: calc(0.3rem -1px);
+}
+
+.Calculadora-body{
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+
+}
+
+.ImprimirResultados{
+    position: relative;
+    text-align: start;
+    padding-left: 1rem;
+
+}
