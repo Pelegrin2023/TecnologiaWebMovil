@@ -35,12 +35,3 @@ if (numeroseperados === null) {
     }
 }
 
-
-/*if (!ValidarNumeros(numeroseperados)) {
-    alert("Por favor, ingrese solo números enteros ." + numeroseperados);
-} else {
-    const num = nummax(numeroseperados);
-    alert("el numero mayor de lista es " + num);
-}
-
-**/
