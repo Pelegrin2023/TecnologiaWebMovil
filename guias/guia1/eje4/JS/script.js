@@ -1,13 +1,9 @@
-/**
- * Solicitar al usuario que ingrese una serie de números separados por comas. Encontrar y mostrar el número más grande entre los números ingresados.
- */
-
-// Funcion para validar que es un numero
+// Funcion para validar que es un numero (modificada para permitir números con comas)
 function ValidarNumeros(entrada) {
-    return /^\d+$/.test(entrada);
+    return /^(\d+\,)*\d+$/.test(entrada);
 }
 
-// funcion para determinar numero mayor
+// funcion para determinar el número mayor
 function nummax(listNumeros) {
     const numeros = listNumeros.split(',');
 
@@ -22,16 +18,16 @@ function nummax(listNumeros) {
     return max;
 }
 
-const numeroseperados = prompt("Ingrese numeros enteros separados por comas");
+const numeroseperados = prompt("Ingrese números enteros separados por comas");
 
 if (numeroseperados === null) {
-    alert("error");
-} else{
+    alert("Error");
+} else {
     if (!ValidarNumeros(numeroseperados)) {
-        alert("Por favor, ingrese solo números enteros ." + numeroseperados);
+        alert("Por favor, ingrese solo números enteros separados por comas.");
     } else {
         const num = nummax(numeroseperados);
-        alert("el numero mayor de lista es " + num);
+        alert("El número mayor de la lista es " + num);
     }
 }
 
