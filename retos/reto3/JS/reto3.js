@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
             resulDiv.textContent = "Error: datos no válidos";
         }
     });
-
     // Funciones
     // Función para calcular valor total a pagar
     function CalcularTotal(totalBoleta, PorcentajePropina) {
