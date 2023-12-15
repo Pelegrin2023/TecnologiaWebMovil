@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- ============================================================================================================= -->
+    <!-- REQUIRED CSS -->
+    <!-- ============================================================================================================= -->
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- ============================================================================================================= -->
+    <!-- REQUIRED SCRIPTS -->
+    <!-- ============================================================================================================= -->
+
+    <!-- JS Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Asegúrate de incluir jQuery antes de tu script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Reto 4</h1>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content pb-2">
+        <div class="row p-0 m-0">
+            <!--Ingresar datos-->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-list"></i> Calculardora de IMC
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Formulario-->
+                        <form class="needs-validation" novalidate>
+                            <div class="card-body p-2">
+                                <!-- Nombre-->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" name="nombre" id="nombre"
+                                                class="form-control form-control-sm" placeholder="Ingrese nombre"
+                                                required />
+                                            <div class="invalid-feedback">
+                                                Debe ingresar el nombre
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Genero-->
+                                <div class="form-group mb-2">
+                                    <label class="col-form-label" for="selgenero">
+                                        <i class="fas fa-file-alt fs-6"></i>
+                                        <span class="small">Género </span><span class="text-danger">*</span>
+                                    </label>
+
+                                    <select class="form-select form-select-sm" name="selgenero" id="selgenero"
+                                        aria-label=".form-select-sm example" required>
+                                        <option value="">-- Selecione Género --</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Femenino</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Debe Selecionar una opción
+                                    </div>
+                                </div>
+
+                                <!-- Actividad Fisica-->
+                                <div class="form-group mb-2">
+                                    <label class="col-form-label" for="selActividad">
+                                        <i class="fas fa-file-alt fs-6"></i>
+                                        <span class="small">Actividad Física </span><span class="text-danger">*</span>
+                                    </label>
+
+                                    <select class="form-select form-select-sm" name="selActividad" id="selActividad"
+                                        aria-label=".form-select-sm example">
+                                        <option value="">-- Selecione Actividad --</option>
+                                        <option value="1.2">Sedentario</option>
+                                        <option value="1.55">Moderado</option>
+                                        <option value="1.9">Activo</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Debe Selecionar una opción
+                                    </div>
+                                </div>
+
+                                <!--Peso-->
+                                <div class="form-group">
+                                    <label for="peso (kg)">Peso : </label>
+                                    <input type="number" min="0" name="peso" id="peso"
+                                        class="form-control form-control-sm" placeholder="Ingrese peso" required />
+                                    <div class="invalid-feedback">
+                                        Debe Ingresar un valor
+                                    </div>
+                                </div>
+
+                                <!-- Altura -->
+                                <div class="form-group">
+                                    <label for="altura (m)">Altura : </label>
+                                    <input type="number" min="0" name="altura" id="altura" step="0.01"
+                                        class="form-control form-control-sm" placeholder="Ingrese Altura"
+                                        pattern="[0-9]+([\.,][0-9]+)?" title="Ingrese un número válido" required />
+                                    <div class="invalid-feedback">
+                                        Debe Ingresar un valor
+                                    </div>
+                                </div>
+
+
+                                <!--Edad-->
+                                <div class="form-group">
+                                    <label for="edad">Edad : </label>
+                                    <input type="number" min="0" name="edad" id="edad"
+                                        class="form-control form-control-sm" placeholder="Monto Edad" required />
+                                    <div class="invalid-feedback">
+                                        Debe Ingresar un valor
+                                    </div>
+                                </div>
+
+                                <!-- Boton para calcular y limpiar-->
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-danger mt-3 mx-2" style="width: 100px"
+                                            id="btnLimpiar">
+                                            Limpiar
+                                        </button>
+                                        <button type="button" class="btn btn-primary mt-3 mx-2" style="width: 100px"
+                                            id="btnCalcular">
+                                            Calcular
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <h5 class="card-header py-1 bg-primary text-white text-center">
+                        Nombre : <span id="resNombre"></span>
+                    </h5>
+                </div>
+
+                <div class="card-body p-2">
+                    <!--Mostrar efectivo pago y vuelto -->
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <h6 class="text-start fw-bold">
+                                IMC :
+                                <span id="resImc"> </span>
+                            </h6>
+                        </div>
+                    </div>
+
+                    <!-- Mostrar subtotal, Impuesto y Total-->
+                    <div class="row">
+                        <div class="col-md-7">
+                            <span>Clasificación : </span>
+                        </div>
+                        <div class="col-md-5 text-right">
+                             <span class="" id="resClasificación"></span>
+                        </div>
+
+                        <div class="col-md-7">
+                            <span>Gasto Energetico Diario : </span>
+                        </div>
+                        <div class="col-md-5 text-right">
+                             <span class="" id="ResGasto"></span>
+                        </div>
+
+                        <div class="col-md-7">
+                            <span>Estado Nutricional : </span>
+                        </div>
+                        <div class="col-md-5 text-right">
+                             <span class="" id="resEstado"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/estado.js"></script>
+
+</html>
